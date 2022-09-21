@@ -1,7 +1,6 @@
 ﻿# Drift Paradise
 
 * [English](#english)
-* [Русский](#russian)
 
 ## English
 Drift Paradise is the racing gamemode for [Multi Theft Auto: San Andreas](https://mtasa.com). This repository contains source code of its old version (December 20, 2016).
@@ -32,37 +31,6 @@ You can stop and restart gamemode by stopping and restarting *dpStartup* resourc
 stop dpStartup
 restart dpStartup
 ```
-
-<a name="russian"><h2>Русский</h2></a>
-Drift Paradise это гоночный игровой режим для [Multi Theft Auto: San Andreas](https://mtasa.com). Этот репозиторий содержит исходный код его старой версии (20 декабря 2016 года).
-
-Инструкции и ответы на ваши **вопросы** (про карты и гараж тоже): https://github.com/dpmta/driftparadise/wiki
-
-### Инструкция по запуску
-1. Склонируйте этот репозиторий в папку `resources` вашего сервера:
-```bash
-git clone https://github.com/dpmta/driftparadise.git [dp]
-```
-2. Установите MySQL сервер и укажите данные для подключения к нему в файле `[core]/dpCore/server/database/DatabaseConfig.lua` (этот файл потребуется создать из DatabaseConfig-sample.lua)
-Измените значения полей *host, port, dbName, username* and *password* на необходимые вам.
-3. Добавьте в файл `acl.xml` строки, указанные ниже, чтобы выдать права администратора некоторым ресурсам:
-```xml
-<object name="resource.dpAdmin"></object>
-<object name="resource.dpStartup"></object>
-<object name="resource.dpTelegramChat"></object>
-<object name="resource.builder"></object>
-<object name="resource.encrypter"></object>
-```
-4. Включите сервер MTA и запустите мод:
-```
-start dpStartup
-```
-Чтобы выключить или перезагрузить мод, используйте ресурс *dpStartup*:
-```
-stop dpStartup
-restart dpStartup
-```
-
 # License
 Copyright (c) 2018, Nikita Bredikhin.
 
